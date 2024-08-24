@@ -1,9 +1,8 @@
-package org.localhost.demo.designPattern;
+package demo.designPattern.singleton;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.localhost.demo.designPattern.singleton.*;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;

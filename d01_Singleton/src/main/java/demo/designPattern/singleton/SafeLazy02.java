@@ -1,4 +1,4 @@
-package org.localhost.demo.designPattern.singleton;
+package demo.designPattern.singleton;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;

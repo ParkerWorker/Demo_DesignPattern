@@ -1,4 +1,4 @@
-package org.localhost.demo.designPattern.singleton;
+package demo.designPattern.singleton;
 
 import java.io.*;
 import java.lang.reflect.Constructor;

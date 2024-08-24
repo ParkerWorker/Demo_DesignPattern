@@ -1,4 +1,4 @@
-package org.localhost.demo.designPattern.singleton;
+package demo.designPattern.singleton;
 
 /**
  * 饿汉式-方式1（静态变量方式）

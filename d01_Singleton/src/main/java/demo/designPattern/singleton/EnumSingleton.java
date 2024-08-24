@@ -1,4 +1,4 @@
-package org.localhost.demo.designPattern.singleton;
+package demo.designPattern.singleton;
 
 /**
  * 枚举方式单例模式

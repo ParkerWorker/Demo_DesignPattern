@@ -1,4 +1,4 @@
-package org.localhost.demo.designPattern.singleton;
+package demo.designPattern.singleton;
 
 /**
  * 懒汉式-方式4（静态内部类方式）
