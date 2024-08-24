@@ -32,18 +32,28 @@ public class DemoTest {
     }
 
     @Test
-    public void testLazy01() {
-        System.out.println(Lazy01.getInstance().toString());
+    public void testLazy1(){
+        System.out.println(Lazy1.getInstance().toString());
     }
 
     @Test
-    public void testLazy02() {
-        System.out.println(Lazy02.getInstance().toString());
+    public void testLazy2(){
+        System.out.println(Lazy2.getInstance().toString());
     }
 
     @Test
-    public void testLazy03() {
-        System.out.println(Lazy03.getInstance().toString());
+    public void testLazy3() {
+        System.out.println(Lazy3.getInstance().toString());
+    }
+
+    @Test
+    public void testLazy4() {
+        System.out.println(Lazy4.getInstance().toString());
+    }
+
+    @Test
+    public void testLazy5() {
+        System.out.println(Lazy5.getInstance().toString());
     }
 
     @Test
@@ -55,13 +65,13 @@ public class DemoTest {
 
     @Test
     public void testSerializeCloneWithPath() throws IOException, ClassNotFoundException {
-        printMessage(Lazy02.class, Lazy02.getInstance(), SingleClone.cloneSingleWithSerialization(Lazy02.getInstance(), PATH));
+        printMessage(Lazy4.class, Lazy4.getInstance(), SingleClone.cloneSingleWithSerialization(Lazy4.getInstance(), PATH));
         printMessage(SafeLazy02.class, SafeLazy02.getInstance(), SingleClone.cloneSingleWithSerialization(SafeLazy02.getInstance(), PATH));
     }
 
     @Test
     public void testConstructorClone() throws InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
-        printMessage(Lazy02.class, Lazy02.getInstance(), SingleClone.cloneSingletonWithReflect(Lazy02.class));
+        printMessage(Lazy4.class, Lazy4.getInstance(), SingleClone.cloneSingletonWithReflect(Lazy4.class));
 
         Assert.assertThrows(InvocationTargetException.class, () -> {
             try {

@@ -7,16 +7,16 @@ package demo.designPattern.singleton;
  * @version 1.0
  * @since 2024/8/24 15:49
  **/
-public class Lazy03 {
+public class Lazy5 {
     //私有构造方法
-    private Lazy03() {}
+    private Lazy5() {}
 
     private static class SingletonHolder {
-        private static final Lazy03 INSTANCE = new Lazy03();
+        private static final Lazy5 INSTANCE = new Lazy5();
     }
 
     //对外提供静态方法获取该对象
-    public static Lazy03 getInstance() {
+    public static Lazy5 getInstance() {
         return SingletonHolder.INSTANCE;
     }
 

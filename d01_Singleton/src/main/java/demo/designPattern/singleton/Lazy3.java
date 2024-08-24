@@ -8,20 +8,20 @@ package demo.designPattern.singleton;
  * @version 1.0
  * @since 2024/8/24 15:43
  **/
-public class Lazy01 {
+public class Lazy3 {
     //私有构造方法
-    private Lazy01() {}
+    private Lazy3() {}
 
-    private static Lazy01 instance;
+    private static Lazy3 instance;
 
     //对外提供静态方法获取该对象
-    public static Lazy01 getInstance() {
+    public static Lazy3 getInstance() {
         //第一次判断，如果instance不为null，不进入抢锁阶段，直接返回实例
         if(instance == null) {
-            synchronized (Lazy01.class) {
+            synchronized (Lazy3.class) {
                 //抢到锁之后再次判断是否为null
                 if(instance == null) {
-                    instance = new Lazy01();
+                    instance = new Lazy3();
                 }
             }
         }
