@@ -1,0 +1,31 @@
+package demo.designPattern.prototype.deep;
+
+import java.io.Serializable;
+
+/**
+ * 奖状类
+ *
+ * @author 12208
+ * @version 1.0
+ * @since 2024/8/25 0:58
+ **/
+public class Citation implements Cloneable, Serializable {
+    private Student stu;
+
+    public Student getStu() {
+        return stu;
+    }
+
+    public void setStu(Student stu) {
+        this.stu = stu;
+    }
+
+    void show() {
+        System.out.println(stu.getName() + "同学：在2020学年第一学期中表现优秀，被评为三好学生。特发此状！");
+    }
+
+    @Override
+    public Citation clone() throws CloneNotSupportedException {
+        return (Citation) super.clone();
+    }
+}
