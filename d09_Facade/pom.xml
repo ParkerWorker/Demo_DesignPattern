@@ -5,12 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.localhost.demo.designPattern</groupId>
-    <artifactId>d08_Bridge</artifactId>
+    <artifactId>d09_Facade</artifactId>
     <version>1.0-SNAPSHOT</version>
     <description>
-        桥接模式 - 将抽象与实现分离，使它们可以独立变化。它是用组合关系代替继承关系来实现，从而降低了抽象和实现这两个可变维度的耦合度。
+        外观模式
+        又名门面模式，是一种通过为多个复杂的子系统提供一个一致的接口，而使这些子系统更加容易被访问的模式。
+        - 外部应用程序不用关心内部子系统的具体的细节，这样会大大降低应用程序的复杂度，提高了程序的可维护性。
     </description>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
